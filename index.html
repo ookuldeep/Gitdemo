@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Outfit Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Outfit Planner</h1>
+        <nav>
+            <a href="#" id="login-btn">Login</a>
+            <a href="#" id="signup-btn">Sign Up</a>
+            <a href="#" id="logout-btn" style="display: none;">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="clothing-input">
+            <h2>Add Your Clothes</h2>
+            <input type="text" id="clothing-name" placeholder="Clothing Name">
+            <input type="text" id="clothing-color" placeholder="Color">
+            <input type="text" id="clothing-size" placeholder="Size (S, M, L)">
+            <select id="clothing-fit">
+                <option value="slim">Slim Fit</option>
+                <option value="regular">Regular Fit</option>
+                <option value="baggy">Baggy Fit</option>
+            </select>
+            <button id="add-clothing">Add Clothing</button>
+        </section>
+
+        <section id="wardrobe">
+            <h2>Your Wardrobe</h2>
+            <ul id="wardrobe-list"></ul>
+        </section>
+
+        <section id="outfits">
+            <h2>Your AI-Generated Outfits</h2>
+            <button id="generate-outfits">Generate 7-Day Outfits</button>
+            <div id="outfit-results"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
