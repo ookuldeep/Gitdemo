@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const li = document.createElement("li");
             li.textContent = `${item.name} - ${item.color}, ${item.size}, ${item.fit}`;
             wardrobeList.appendChild(li);
+             wardrobeList.appendChild(li);
         });
     }
 
